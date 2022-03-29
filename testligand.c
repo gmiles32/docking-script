@@ -149,7 +149,11 @@ int main (int argc, char * argv[]){
 
                 //Make pdbqt file
                 char command[MAX_BUFFER_LENGTH];
+		    
+		//CHANGE ME 
+		//To whatever you Meeko path is
                 strcpy(command, "python3 ~/Programs/Meeko/scripts/mk_prepare_ligand.py -i ");
+		    
                 strcat(command, ligandFileName);
                 strcat(command, " -o ");
                 //Exchanges .sdf for .pdbqt in final file name
